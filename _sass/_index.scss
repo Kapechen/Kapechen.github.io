@@ -1,0 +1,417 @@
+
+
+.page[index] {
+    a {
+        color: #4d6dad;
+        transition: 0.5s ease;
+        &:hover {
+            color: #223253;
+        }
+    }
+    .left {
+        // border:1px solid black;
+        border-radius: 5px;
+        background:rgba(222,222,222,0.5);
+        transition: 0.3s ease;
+        box-shadow:2px 2px 10px black;
+        text-align: center;
+        &:hover {
+            box-shadow:2px 2px 40px white;
+            .firstsmall{               
+                display: none;
+            }
+            .secondsmall{               
+                display: block;
+            }
+        }
+        h1{
+            display: inline-block;
+            width: auto;
+            font-family: '楷体';
+            color: #66ccff;
+            // width: 20px;
+            font-weight: 700;
+            // background: #60C5F1;
+            border:2px solid #66ccff;
+            border-radius:2px;
+        }
+        small{
+            font-family: '楷体';
+            text-align: center;
+            font-size: 20px;
+            // color:#66ccff;
+            font-weight: 700;
+        }
+        .firstsmall{
+           display: block;
+        }
+        .secondsmall{
+            display: none;
+        }
+        >ul {
+            // z-index: 100;
+            // border:1px solid red;
+            padding: 0;
+            >li {
+                list-style: none;
+            }
+            li {
+                // color: #66ccff;
+                color:rgb(50,50,50);
+                font-weight: 700;
+                h2 {
+                    border: none;
+                    font-size: 27px;
+                    margin: 0;
+                }
+                .label {
+                    margin-bottom: 15px;
+                    overflow: hidden;
+                    .label-card {
+                        float: left;
+                        margin-right: 15px;
+                        i {
+                            padding-right: 0;
+                            margin-right: 3px;
+                            color: #6b6a6a;
+                        }
+                    }
+                    .categories {
+                        padding: 0;
+                    }
+                }
+                .excerpt {
+                    h2 {
+                        font-size: 24px;
+                    }
+                    h3 {
+                        font-size: 22px;
+                    }
+                    h4 {
+                        font-size: 20px;
+                    }
+                }
+                .read-all {
+                    text-align: right;
+                    font-size: 14px;
+                    a {
+                        color: #778ab0;
+                        transition: 0.2s ease;
+                        &:hover {
+                            color: #5872a7;
+                        }
+                        i {
+                            padding-right: 3px;
+                        }
+                    }
+                }
+            }
+        }
+        // .pagination {
+        //     text-align: center;
+        //     .previous,
+        //     .next {
+        //         font-size: 20px;
+        //         padding: 0 5px;
+        //     }
+        //     .page_number {
+        //         padding: 0 5px;
+        //     }
+        //     .disable {
+        //         color: #cbcbcb;
+        //     }
+        // }
+    }
+    .right {
+        .wrap {
+            .side {
+                border-radius: 5px;
+                background:rgba(222,222,222,0.5);
+                box-shadow:2px 2px 10px black;
+                &:hover{
+                    box-shadow:2px 2px 40px white;
+                }
+                margin-bottom: 20px;
+                padding-bottom: 0;
+                i {
+                    margin-right: 3px;
+                }
+                .content-ul[friendship]{
+                    margin: 0;
+                    padding: 0;
+                }
+                .content-ul[friendship] li{
+                    list-style: none;
+                    display: block;
+                    width: 80%;
+                    height: 20px;
+                    // border:1px solid red;
+                    margin-top:5px;
+                    margin-left: 10px;
+                }
+                .content-ul[friendship] li a{
+                    padding-left: 10px;
+                    color: black;
+                    font-weight: 700;
+                    &:hover{
+                        color:#66ccff;
+                        text-shadow: 1px 1px 4px white;    
+                    };
+                }
+                .content-ul[cate] {
+                    overflow: hidden;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        font-size: 14px;
+                        a {
+                            display: block;
+                            width: 100%;
+                            padding: 2px 0;
+                            border-bottom: 1px solid #eee;
+                            &:hover {
+                                background-color: #dbdfee;
+                                .badge {
+                                    background-color: #dbdfee;
+                                    transform: scale(1.2) rotate(360deg);
+                                }
+                            }
+                            .name {
+                                padding-left: 15px;
+                            }
+                            .badge {
+                                display: block;
+
+                                // width: 20px;
+                                float: right;
+                                text-align: center;
+                                margin-right: 15px;
+                                margin-top: 3px;
+                                padding: 0 10px;
+                                font-size: 12px;
+                                color: #fff;
+                                background-color: #bbb;
+                                border-radius: 50%;
+                                transition: 0.5s ease-in-out;
+                            }
+                        }
+                        &:last-of-type a {
+                            border: none;
+                        }
+                    }
+                }
+                .content-ul[recent]{
+                    padding-bottom: 16px;
+                    li{
+                        color:#aaa;
+                        font-size: 14px;
+                    }
+                }
+                // 注释掉的是tags的样式
+                // .tags-cloud {
+                //     font-weight: normal;
+                //     a {
+                //         padding: 0 3px;
+                //         border-radius: 5px;
+                //         &:hover {
+                //             background-color: #f0e7ce;
+                //         }
+                //     }
+                // }
+            }
+        }
+    }
+
+
+}
+@media screen and (max-width: 770px) {
+    .page[index] {
+        .left>ul li {
+            h2 {
+                font-size: 22px;
+            }
+            .excerpt {
+                h2 {
+                    font-size: 20px;
+                }
+                h3 {
+                    font-size: 18px;
+                }
+                h4 {
+                    font-size: 16px;
+                }
+                li{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+// ::-webkit-scrollbar
+// {
+//     width: 9px;
+//     background-color: rgba(1,1,1,0);
+// }
+ 
+// /*定义滚动条轨道 内阴影+圆角*/
+// ::-webkit-scrollbar-track
+// {
+//     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+//     border-radius: 10px;
+//     background-color: rgba(210,210,210,0.6);
+// }
+ 
+// /*定义滑块 内阴影+圆角*/
+// ::-webkit-scrollbar-thumb
+// {
+//     border-radius: 10px;
+//     // height: 500px;
+//     -webkit-box-shadow: inset 0 0 6px rgba(111,111,111,1);
+//     background-color: #66ccff;
+// }
+
+
+
+// 下面都是背景图片轮播效果实现
+.cb-slideshow li{
+        list-style: none;
+    }
+    .cb-slideshow,
+    .cb-slideshow:after {
+        // border:1px solid red;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0px;
+        z-index: -10;
+        margin:0;
+        padding: 0;
+    }
+.cb-slideshow:after {
+    content: '';
+    // background: transparent url(../images/img3.jpg) repeat top left;
+}
+    .cb-slideshow li span {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: transparent;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: none;
+        opacity: 0;
+        z-index: 0;
+        -webkit-backface-visibility: hidden;
+        -webkit-animation: imageAnimation 36s linear infinite 0s;
+        -moz-animation: imageAnimation 36s linear infinite 0s;
+        -o-animation: imageAnimation 36s linear infinite 0s;
+        -ms-animation: imageAnimation 36s linear infinite 0s;
+        animation: imageAnimation 36s linear infinite 0s;
+    }
+    .cb-slideshow li:nth-child(1) span {
+        background-image: url(../images/img1.jpg);
+    }
+    .cb-slideshow li:nth-child(2) span {
+        background-image: url(../images/img2.jpg);
+        -webkit-animation-delay: 6s;
+        -moz-animation-delay: 6s;
+        -o-animation-delay: 6s;
+        -ms-animation-delay: 6s;
+        animation-delay: 6s;
+    }
+    .cb-slideshow li:nth-child(3) span {
+        background-image: url(../images/img3.jpg);
+        -webkit-animation-delay: 12s;
+        -moz-animation-delay: 12s;
+        -o-animation-delay: 12s;
+        -ms-animation-delay: 12s;
+        animation-delay: 12s;
+    }
+    .cb-slideshow li:nth-child(4) span {
+        background-image: url(../images/img1.jpg);
+        -webkit-animation-delay: 18s;
+        -moz-animation-delay: 18s;
+        -o-animation-delay: 18s;
+        -ms-animation-delay: 18s;
+        animation-delay: 18s;
+    }
+    .cb-slideshow li:nth-child(5) span {
+        background-image: url(../images/img2.jpg);
+        -webkit-animation-delay: 24s;
+        -moz-animation-delay: 24s;
+        -o-animation-delay: 24s;
+        -ms-animation-delay: 24s;
+        animation-delay: 24s;
+    }
+    .cb-slideshow li:nth-child(6) span {
+        background-image: url(../images/img3.jpg);
+        -webkit-animation-delay: 30s;
+        -moz-animation-delay: 30s;
+        -o-animation-delay: 30s;
+        -ms-animation-delay: 30s;
+        animation-delay: 30s;
+    }
+    /* Animation for the slideshow images */
+    @-webkit-keyframes imageAnimation {
+        0% { opacity: 0;
+            -webkit-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+            -webkit-animation-timing-function: ease-out; }
+        17% { opacity: 1; }
+        25% { opacity: 0; }
+        100% { opacity: 0; transform: scale(1.5);}
+    }
+    @-moz-keyframes imageAnimation {
+        0% { opacity: 0;
+            -moz-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+            -moz-animation-timing-function: ease-out; }
+        17% { opacity: 1; }
+        25% { opacity: 0; }
+        100% { opacity: 0; transform: scale(1.5);}
+    }
+    @-o-keyframes imageAnimation {
+        0% { opacity: 0;
+            -o-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+            -o-animation-timing-function: ease-out; }
+        17% { opacity: 1; }
+        25% { opacity: 0; }
+        100% { opacity: 0; transform: scale(1.5);}
+    }
+    @-ms-keyframes imageAnimation {
+        0% { opacity: 0;
+            -ms-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+            -ms-animation-timing-function: ease-out; }
+        17% { opacity: 1; }
+        25% { opacity: 0; }
+        100% { opacity: 0; transform: scale(1.5);}
+    }
+    @keyframes imageAnimation {
+        0% { opacity: 0;
+            animation-timing-function: ease-in; }
+        8% { opacity: 1;
+            animation-timing-function: ease-out; }
+        17% { opacity: 1;}
+        25% { opacity: 0; }
+        100% { opacity: 0; 
+         transform: scale(1.5);}
+    }
+
+/* Show at least something when animations not supported */
+    .no-cssanimations .cb-slideshow li span{
+        opacity: 1;
+    }
+
+    @media screen and (max-width: 1140px) {
+        .cb-slideshow li div h3 { font-size: 140px }
+    }
+    @media screen and (max-width: 600px) {
+        .cb-slideshow li div h3 { font-size: 80px }
+    }
