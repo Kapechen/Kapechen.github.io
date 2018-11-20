@@ -35,11 +35,7 @@ tags: 胡扯频道
 
 **初音未来经典曲之一：深海少女**
 
-<audio id="audio" controls="" preload="none">
-      <source id="mp3" src="
-        https://github.com/kkzhu119/images/blob/master/Vocaloid/%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF%20-%20%E6%B7%B1%E6%B5%B7%E5%B0%91%E5%A5%B3.mp3
-      ">
-</audio>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=22677451&auto=1&height=66"></iframe>
 
 在经历了十多年的发展后，虚拟歌手的家族成员数量越来越多，可选的音色范围也越来越广。目前VOCALOID家族中有日本虚拟歌手，也有后来到中国发展成长起来的中文虚拟歌手。日本歌手有**镜音铃,镜音连,巡音流歌,巡音露卡,始音(KAITO),起音美可(Meiko),GUMI**等等，而中文歌手也不少，其中包括**洛天依，徵羽摩柯，乐正绫，墨清弦，乐正龙牙**等等。
 
