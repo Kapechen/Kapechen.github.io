@@ -47,6 +47,16 @@
     box-sizing: border-box;
     margin: 0 auto;
     // word-break: break-all;
+    .musicplayer{
+        border: 1px solid white;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 500px;
+        &:hover{
+            border:1px solid slateblue;
+        }
+    }
     .left {
         width: 75%;
         float: left;
