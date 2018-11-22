@@ -1,4 +1,28 @@
 .site-footer {
+    position: fixed;
+    .landlord{
+        position: absolute;
+        left:0;
+        width: 500px;
+        height:auto;
+        bottom: 0;
+        // border: 1px solid red;
+        margin: 0;
+        padding: 0;
+        .message{
+            position: fixed;
+            bottom: 260px;
+            text-align: center;
+            color: darkorchid;
+            font-weight: 800;
+            left:40px;
+        }
+        #live2d{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    }
     position: absolute;
     right: 0;
     bottom: 0;
@@ -42,6 +66,7 @@
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {
     .site-footer {
+        
         .wrapper {
             width: 90%;
         }
@@ -49,6 +74,9 @@
 }
 @media screen and (max-width: 770px) {
     .site-footer {
+        .landlord{
+            display: none;
+        }
         .wrapper {
             width: 90%;
         }

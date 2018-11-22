@@ -1,6 +1,7 @@
 
 
 .page[index] {
+    
     a {
         color: #4d6dad;
         transition: 0.5s ease;
@@ -52,14 +53,12 @@
             display: none;
         }
         >ul {
-            // z-index: 100;
-            // border:1px solid red;
             padding: 0;
             >li {
                 list-style: none;
             }
             li {
-                // color: #66ccff;
+
                 color:rgb(50,50,50);
                 font-weight: 700;
                 h2 {
