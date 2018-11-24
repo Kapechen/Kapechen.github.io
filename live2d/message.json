@@ -1,10 +1,6 @@
 {
     "mouseover": [
         {
-            "selector": ".title a",
-            "text": ["要看看 {text} 么？"]
-        },
-        {
             "selector": ".home",
             "text": ["欢迎来到Kapechen的小窝"]
         },
