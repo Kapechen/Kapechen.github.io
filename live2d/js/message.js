@@ -21,7 +21,7 @@ String.prototype.renderTip = function (context) {
 };
 
 $(document).on('copy', function (){
-    showMessage('你都复制了些什么呀，转载要记得加上出处哦~~', 5000);
+    showMessage('复制粘贴~复制粘贴~嘿咻嘿咻', 5000);
 });
 
 $.ajax({
